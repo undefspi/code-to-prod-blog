@@ -57,7 +57,7 @@ spec:
       - lint
     params:
       - name: package
-        value: github.com/undefspi/reverse-words
+        value: github.com/mvazquezc/reverse-words
       - name: GOOS
         value: "linux"
     resources:
