@@ -1,0 +1,27 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: reverse
+  namespace: reverse-words-stage
+  labels:
+    app: reverse-words
+    app.kubernetes.io/instance: reverse-words-stage
+spec:
+  host: reverse-reverse-words-stage.apps-crc.testing
+  to:
+    kind: Service
+    name: reverse-words
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None
+status:
+  ingress:
+    - host: reverse-reverse-words-stage.apps-crc.testing
+      routerName: default
+      conditions:
+        - type: Admitted
+          status: 'True'
+          lastTransitionTime: '2020-06-03T18:25:39Z'
+      wildcardPolicy: None
+      routerCanonicalHostname: apps-crc.testing
