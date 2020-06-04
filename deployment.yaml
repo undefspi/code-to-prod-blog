@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reverse-words
+  name: reversewords
   labels:
-    app: reverse-words
+    app: reversewords
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reverse-words
+      app: reversewords
   template:
     metadata:
       labels:
-        app: reverse-words
+        app: reversewords
     spec:
       containers:
-      - name: reverse-words
+      - name: reversewords
         image: quay.io/mavazque/tekton-reversewords:latest
         ports:
         - containerPort: 8080

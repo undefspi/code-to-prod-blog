@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: reverse-words
-  name: reverse-words
+    app: reversewords
+  name: reversewords
 spec:
   ports:
   - port: 8080
@@ -11,5 +11,5 @@ spec:
     targetPort: http
     name: http
   selector:
-    app: reverse-words
+    app: reversewords
   type: LoadBalancer
