@@ -15,4 +15,3 @@ spec:
   port:
     targetPort: http
   wildcardPolicy: None
-status:
