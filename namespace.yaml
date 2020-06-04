@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: reverse_words_stage
+  name: reversewords-stage
