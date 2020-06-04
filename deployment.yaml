@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reverse-words
+  name: reverse_words
   labels:
-    app: reverse-words
+    app: reverse_words
 spec:
   template:
     spec:
