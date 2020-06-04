@@ -1,0 +1,18 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: reverse
+  namespace: reversewords-stage
+  labels:
+    app: reversewords
+    app.kubernetes.io/instance: reversewords-stage
+spec:
+  host: reverse-reversewords-stage.apps-crc.testing
+  to:
+    kind: Service
+    name: reversewords
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None
+status:
