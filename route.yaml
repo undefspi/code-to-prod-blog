@@ -2,12 +2,12 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: reverse
-  namespace: reversewords-stage
+  namespace: reverse-words-stage
   labels:
     app: reversewords
-    app.kubernetes.io/instance: reversewords-stage
+    app.kubernetes.io/instance: reverse-words-stage
 spec:
-  host: reverse-reversewords-stage.apps-crc.testing
+  host: reverse-reverse-words-stage.apps-crc.testing
   to:
     kind: Service
     name: reversewords
