@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: reverse
+  name: reverse-words
   namespace: reverse-words-stage
   labels:
     app: reverse-words
