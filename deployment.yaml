@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reversewords
+  name: reverse-words
   labels:
-    app: reversewords
+    app: reverse-words
 spec:
   template:
     spec:
       containers:
-      - name: reversewords
+      - name: reverse-words
         image: quay.io/quaggy/tekton-reversewords:1e87e5380754c6beb769804f19b9ee996257b596
         env:
         - name: RELEASE

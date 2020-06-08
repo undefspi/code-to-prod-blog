@@ -4,13 +4,13 @@ metadata:
   name: reverse
   namespace: reverse-words-stage
   labels:
-    app: reversewords
+    app: reverse-words
     app.kubernetes.io/instance: reverse-words-stage
 spec:
   host: reverse-reverse-words-stage.apps-crc.testing
   to:
     kind: Service
-    name: reversewords
+    name: reverse-words
     weight: 100
   port:
     targetPort: http
